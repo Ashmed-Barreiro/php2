@@ -19,6 +19,7 @@
             } else {
                 echo "<h2>El camp $ està buit. Si us plau, introdueix el teu nom.</h2>";
             }
+            
         } else {
             echo "<h2>Accés no vàlid.</h2>";
         }
