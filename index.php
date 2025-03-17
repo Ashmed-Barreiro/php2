@@ -9,6 +9,8 @@
     <li><a href="ejericiciosIniciales.php">Ejercicios iniciales</a></li> 
     <br>
     <li><a href="estadisticasBasicas.php">Estadisticas Básicas</a></li> 
+<br>
+    <li><a href="formulario.html">Formulario</a></li>
      
 </body>
 </html>
