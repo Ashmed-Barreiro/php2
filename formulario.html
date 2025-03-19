@@ -5,21 +5,28 @@
 <body>
     <form method="post" action="formulario.php">
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom"/>
+        <input type="text" id="nom" name="nom"/><br><br>
         <label for="Apellidos">Apellidos:</label>
-        <input type="text" id="Apellidos" name="Apellidos"/>
+        <input type="text" id="Apellidos" name="Apellidos"/><br><br>
         <label for="Genero">Genero:</label>
-        <input type="radio" id="Genero" name="Genero"/>
+        <input type="radio" id="Genero" name="Genero" value="Femenino"/><span>Femenino</span>
+        <input type="radio" id="Genero" name="Genero" value="Masculino"/><span>Masculino</span><BR></BR><br>
         <label for="Email">Email:</label>
-        <input type="email" id="Email" name="Email"/>
+        <input type="email" id="Email" name="Email"/><br><br>
         <label for="Edad">Edad:</label>
-        <input type="number" id="Edad" name="Edad"/>
+        <input type="number" id="Edad" name="Edad" max="100" min="18"/><br><br>
         <label for="Ciudad">Ciudad:</label>
-        <input type="text" id="Ciudad" name="Ciudad"/>
+        <input type="text" name="Ciudad"/><br><br>
+        <datalist id="Ciudad">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Lleida">Lleida</option>
+            <option value="Girona">Girona</option>
+            <option value="Tarragona">Tarragona</option>
+        </datalist>
         <label for="aficiones">Lista aficiones:</label>
-        <input type="text" id="aficiones" name="aficiones"/>
+        <input type="text" id="aficiones" name="aficiones"/><br><br>
         <label for="motivaciones">Espacio para motivaciones:</label>
-        <input type="text" id="motivaciones" name="motivaciones"/>
+        <input type="text" id="motivaciones" name="motivaciones"/><br><br>
         <input type="submit" value="Enviar"/>
     </form>
 </body>
