@@ -14,11 +14,9 @@
     <br>
     <li><a href="veureTotesLesNoticies.php">Todas las Noticias</a></li> 
     <br>
-    <li><a href="veureSeccio.php">Noticias por Seccion</a></li> 
+    <li><a href="veureSeccions.php">Noticias por Seccion</a></li> 
     <br>
-    <li><a href="veureNoticiesSeccio.php">Todas las Secciones</a></li> 
-    <br>
-    <li><a href="veureSeccioLink.php">Ver Link de las secciones</a></li> 
+    <li><a href="veureSeccionsLink.php">Ver Link de las secciones</a></li> 
      
 </body>
 </html>
