@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <li><a href="ejericiciosIniciales.php">Ejercicios iniciales</a></li> 
+    <li><a href="/EjerciciosIniciales/ejericiciosIniciales.php">Ejercicios iniciales</a></li> 
     <br>
-    <li><a href="estadisticasBasicas.php">Estadisticas Básicas</a></li> 
+    <li><a href="/Estadisticas/estadisticasBasicas.php">Estadisticas Básicas</a></li> 
 <br>
-    <li><a href="formulario.html">Formulario</a></li>
+    <li><a href="/formulario/formulario.html">Formulario</a></li><br>
+    <li><a href="/Conexion_BD/index.php">Bases de Datos</a></li>
      
 </body>
 </html>
