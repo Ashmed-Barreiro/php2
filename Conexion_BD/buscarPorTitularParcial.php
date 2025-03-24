@@ -7,14 +7,14 @@ $nom = $_GET['titular'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar por titular</title>
+    <title>Buscar por titular parcial</title>
 </head>
 <body>
     <form action="" method="get">
-    <input type="text" id="titular" name="titular">Buscar por titular</input><br><br>
+    <input type="text" id="titular" name="titular">Buscar por titular parcial</input><br><br>
     <input type="submit"  value="Buscar">
     <?php
-    $stmt = $db->prepare("SELECT * FROM noticies where not_titular = :nom_titular");
+    $stmt = $db->prepare("SELECT * FROM noticies where LOWER(not_titular) like :nom_titular");
     $stmt->bindValue(':nom_titular', $nom, SQLITE3_TEXT);
     $resultats = $stmt->execute();
     while ($fila = $resultats->fetchArray(SQLITE3_ASSOC)) {

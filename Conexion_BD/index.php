@@ -19,6 +19,8 @@
     <li><a href="veureSeccionsLink.php">Ver Link de las secciones</a></li> 
     <br>
     <li><a href="buscarPorTitular.php">Buscar por titular</a></li>
+    <br>
+    <li><a href="buscarPorTitularParcial.php">Buscar por titular Parcial</a></li>
      
 </body>
 </html>
