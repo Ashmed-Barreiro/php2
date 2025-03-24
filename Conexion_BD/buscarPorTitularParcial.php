@@ -1,6 +1,7 @@
 <?php
 $db = new SQLite3('diariLocal.db');
 $nom = $_GET['titular'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +15,13 @@ $nom = $_GET['titular'];
     <input type="text" id="titular" name="titular">Buscar por titular parcial</input><br><br>
     <input type="submit"  value="Buscar">
     <?php
-    $stmt = $db->prepare("SELECT * FROM noticies where LOWER(not_titular) like :nom_titular");
-    $stmt->bindValue(':nom_titular', $nom, SQLITE3_TEXT);
+    if ($nom){
+        echo'<p>Buscando coincidencias</p>';
+   
+    $stmt = $db->prepare("SELECT * FROM noticies where not_titular like :nom_titular");
+    $stmt->bindValue(':nom_titular', "%$nom%", SQLITE3_TEXT);
     $resultats = $stmt->execute();
-    while ($fila = $resultats->fetchArray(SQLITE3_ASSOC)) {
+} while ($fila = $resultats->fetchArray(SQLITE3_ASSOC)) {
         echo "ID: ". $fila['not_id'] ." - Titular: ". $fila['not_titular'] ." - Noticia: ". $fila['not_cos'] ." - Fecha: ". $fila['not_data']." - Sección: ". $fila['not_seccio']."<br>";
     }
     ?>
