@@ -17,6 +17,8 @@
     <li><a href="veureSeccions.php">Noticias por Seccion</a></li> 
     <br>
     <li><a href="veureSeccionsLink.php">Ver Link de las secciones</a></li> 
+    <br>
+    <li><a href="buscarPorTitular.php">Buscar por titular</a></li>
      
 </body>
 </html>
